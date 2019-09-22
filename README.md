@@ -101,7 +101,8 @@ PostgreSQL tries to conform with the SQL standard where such conformance does no
 
 There are many more features that you can discover in the PostgreSQL documentation. Additionally, PostgreSQL is highly extensible: many features, such as indexes, have defined APIs so that you can build out with PostgreSQL to solve your challenges.
 
-Below is the link for current version of Postgresql documentation:
+## Below is the link for current version of Postgresql documentation:
+
 *Link*: https://www.postgresql.org/docs/current/index.html 
 
 PostgreSQL has been proven to be highly scalable both in the sheer quantity of data it can manage and in the number of concurrent users it can accommodate. There are active PostgreSQL clusters in production environments that manage many terabytes of data, and specialized systems that manage petabytes.
