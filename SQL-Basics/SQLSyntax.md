@@ -37,7 +37,7 @@ Semicolon is the standard way to separate each SQL statement in database systems
 ## SQL commands are mainly categorized into four categories as:
 
 1. DDL – Data Definition Language
-2. DQl – Data Query Language
+2. DQL – Data Query Language
 3. DML – Data Manipulation Language
 4. DCL – Data Control Language
 
