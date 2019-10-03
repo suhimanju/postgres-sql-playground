@@ -12,8 +12,9 @@ FROM table_name
 WHERE condition;
 ```
 
+**Note:**
 ```
-**Note:** The WHERE clause is not only used in SELECT statement, it is also used in UPDATE, DELETE statement, etc.!
+The WHERE clause is not only used in SELECT statement, it is also used in UPDATE, DELETE statement, etc.!
 ```
 
 ## Demo Database 
@@ -50,6 +51,7 @@ SQL requires single quotes around text values (most database systems will also a
 However, numeric fields should not be enclosed in quotes.
 
 ### Example
+
 ```
 SELECT * FROM Customers WHERE CustomerID=1;
 ```
