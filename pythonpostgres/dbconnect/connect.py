@@ -1,14 +1,21 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+import os
+import sys
 import psycopg2
 
-from pythonpostgres.config import config
+configPath = os.path.abspath("../config")
+sys.path.append(configPath)
+from config import config
+
+filename=configPath + '/database.ini' 
+section='postgres'
 
 def connect():
     """ Connect to the PostgreSQL database server """
     conn = None
     try:
         # read connection parameters
-        params = config()
+        params = config(filename=filename, section=section)
  
         # connect to the PostgreSQL server
         print('Connecting to the PostgreSQL database...')

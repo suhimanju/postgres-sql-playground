@@ -1,7 +1,14 @@
-#!/usr/bin/python
- 
+#!/usr/bin/python3
+import os
+import sys
 import psycopg2
+
+configPath = os.path.abspath("../config")
+sys.path.append(configPath)
 from config import config
+
+filename=configPath + '/database.ini' 
+section='postgres'
  
  
 def get_vendors():
@@ -11,7 +18,7 @@ def get_vendors():
     vendor_id = None
     try:
         # read database configuration
-        params = config()
+        params = config(filename=filename, section=section)        
         # connect to the PostgreSQL database
         conn = psycopg2.connect(**params)
         # create a new cursor
